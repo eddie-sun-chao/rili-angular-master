@@ -20,4 +20,7 @@ export class RiliProxyService {
     return this.httpClient.get<any[]>( this.hostUrl + '/app/rili');
   }
 
+  getDateEvents(value: string) {
+    return this.httpClient.get<any[]>( this.hostUrl + '/app/rili/time/' + value)
+  }
 }
